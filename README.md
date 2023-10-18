@@ -8,16 +8,6 @@ Desenvolvimento de API de que mostra a percentagem de cacao necessario para um d
 -   Junit
 -   Intellij
 
-### Design Arquitetural
-
-A pesar do dominio/escopo do projeto ser bem menor o mesmo foi estruturado usando o principio do padrão arquitetural **ports and adapters - arquitetura hexagonal**
-A baixo segue a estrutura de directorios. Importa referir que apenas so esta ilucidado o objetivo da separação da responsabilidade dos diretorios 
-(pelo fato do escopo nao permitir por exemplo trabalhar com um banco de dados)
--   Camada de Aplicação (controllers, request e response dtos, bean validations)
--   Camada de Domínio (modelos, interface repositório, serviços)
--   Camada de Infraestrutura (configs, exception handle, jpa repository, entidade, proxys que implementam interfaces de repositório e utilizam repositório  jpa para comunicação com banco de dados)
--   Testes
-
 ### Instrução de Uso
 No terminal/Console
 1. Faça  clone do projeto para sua máquina: `https://github.com/bmapute/chocolate.git`
