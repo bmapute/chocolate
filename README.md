@@ -22,7 +22,7 @@ A baixo segue a estrutura de directorios. Importa referir que apenas so esta ilu
 No terminal/Console
 1. Faça  clone do projeto para sua máquina: `https://github.com/bmapute/chocolate.git`
 2. Entre na pasta raiz do projeto `cd`
-3. Executar o comando `.\mvnw spring-boot:run` para subir a aplicação
+3. Executar o comando `mvn spring-boot:run` para subir a aplicação
 4. Para facilitar nos testes a aplicação disponibiliza swagger ui, para usar basta abrir o navegador e passar a seguinte url `http://localhost:8080/swagger-ui/index.html`
 
 ****Visando facilitar a demostração da aplicação é  recomendado usar IDE como por exemplo o IntelliJ IDEA e executar o projeto através da IDE** **
