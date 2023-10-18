@@ -10,11 +10,12 @@
 	</parent>
 	<groupId>com.bmapute</groupId>
 	<artifactId>chocolate</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>chocolate</name>
 	<description>Rest API used to check cacao percentage for each chocolate type</description>
 	<properties>
 		<java.version>17</java.version>
+		<springdoc.version>2.0.4</springdoc.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -24,6 +25,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>${springdoc.version}</version>
 		</dependency>
 
 		<dependency>

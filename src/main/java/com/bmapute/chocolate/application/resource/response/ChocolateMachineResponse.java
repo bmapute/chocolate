@@ -1,8 +1,10 @@
 package com.bmapute.chocolate.application.resource.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.validation.constraints.*;
 
-public record ChocolateMachineResponse(String chocolateType, double cacauPercentage) {
+public record ChocolateMachineResponse(
+        @NotBlank String chocolateType, @Max(1) double cacauPercentage) {
 
     @JsonProperty("cacau_percentage")
     public String getcacauPercentage() {
@@ -12,6 +14,6 @@ public record ChocolateMachineResponse(String chocolateType, double cacauPercent
     @Override
     public String chocolateType() {
         String[] elements = chocolateType.split("[.]");
-        return elements[elements.length-1];
+        return elements[elements.length - 1];
     }
 }

@@ -1,0 +1,7 @@
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    default-property-inclusion: non_null
+    deserialization:
+      FAIL_ON_IGNORED_PROPERTIES: false
+
